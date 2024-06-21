@@ -11,3 +11,12 @@
   }
 }
 </style>
+
+<script setup>
+import { onUnmounted } from 'vue';
+
+onUnmounted(()=>{
+  console.log("unmounted")
+})
+
+</script>
