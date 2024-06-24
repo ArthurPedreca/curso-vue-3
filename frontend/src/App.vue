@@ -1,22 +1,14 @@
 <template>
-
-  {{ count }}
-
-  {{ userName }}
-
-  <ul>
-    <li v-for="user in users">{{user.primeiroNome}} {{ user.segundoNome }} - {{user.age}} Anos</li>
-  </ul>
-
-  <div v-if="showHeader">
-    <Header />
-  </div>
-
-  <button v-on:click="showHeader = !showHeader">Toggle Header</button>
-
   <h2>App</h2>
 
-  <button v-on:click="count++">Add 1</button>
+  {{ count }}
+  {{ userName }}
+  <ul>
+    <li v-for="user in users">{{user.userName}} - Tamanho do penis: {{user.penis}}cm - Idade: {{user.age}} Anos</li>
+  </ul>
+
+  <button v-on:click="count++">Add</button>
+
 
   <router-link to="/">Home</router-link>
   <router-link to="/about">About</router-link>
@@ -24,40 +16,55 @@
   <router-view></router-view>
 </template>
 
-<script>
+<script setup>
+import { onMounted, onUnmounted, onUpdated, reactive, ref } from 'vue';
 
-import Header from "@/components/Header.vue"
+const count = ref(0)
+const userName = ref('Arthur')
 
-export default{
-
-  components:{Header},
-
-  data(){
-    return{
-      count:0,
-      showHeader:false,
-      userName: "Arthur",
-      users:[
-        {
-          primeiroNome:"Arhtur",
-          segundoNome:"pedreca",
-          age:12
-        },
-        {
-          primeiroNome:"Maria",
-          segundoNome:"vc nao sai da minha cabeça",
-          age:19
-        }
-      ]
-    }
+const users = reactive([
+  {
+    id: 1, 
+    userName: "Arthur",
+    age: 25
   },
-
-  mounted(){
-    console.log(this.count)
+  {
+    id: 2,
+    userName: "Rogridão",
+    age: 17
   },
-
-  updated(){
-    console.log("updated")
+  {
+    id: 3,
+    userName: "Marco",
+    age: 16
+  },
+  {
+    id: 4,
+    userName: "Raul",
+    age: 18
+  },
+  {
+    id: 5,
+    userName: "Mateus",
+    age: 20
   }
-}
+])
+
+onMounted(()=>{
+  console.log("mounted")
+})
+
+onUpdated(() =>{
+  console.log("updated")
+})
+
+onUnmounted(()=>{
+  console.log("unmounted")
+})
 </script>
+
+<style>
+#myapp {
+  background-color: aqua;
+}
+</style>
