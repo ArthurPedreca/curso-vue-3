@@ -1,66 +1,67 @@
 <template>
-  <h2>App</h2>
 
-  {{ count }}
-  {{ userName }}
+  <template v-if="showName">
+    Mostrar o nome
+  </template>
+
+  <div :class="teste">teste</div>
+
+  <img :src="image" alt="">
+
   <ul>
-    <li v-for="user in users">{{user.userName}} - Tamanho do penis: {{user.penis}}cm - Idade: {{user.age}} Anos</li>
+    <template v-for="(user, key) in users">
+
+      <li v-if="user.is_admin == 1">
+        {{ key }}: {{ user.userName }}
+      </li>
+      
+    </template>
   </ul>
-
-  <button v-on:click="count++">Add</button>
-
-
-  <router-link to="/">Home</router-link>
-  <router-link to="/about">About</router-link>
-
-  <router-view></router-view>
 </template>
 
-<script setup>
-import { onMounted, onUnmounted, onUpdated, reactive, ref } from 'vue';
-
-const count = ref(0)
-const userName = ref('Arthur')
-
-const users = reactive([
-  {
-    id: 1, 
-    userName: "Arthur",
-    age: 25
+<script>
+export default {
+  data() {
+    return {
+      image:"https://picsum.photos/200/300",
+      teste:"class",
+      showName:false,
+      user: { name: "arthur", age: 10 },
+      users: [
+        {
+          id: 1,
+          userName: "Arthur",
+          age: 25,
+          is_admin: 1,
+        },
+        {
+          id: 2,
+          userName: "Rogridão",
+          age: 17,
+          is_admin: 0,
+        },
+        {
+          id: 3,
+          userName: "Marco",
+          age: 16,
+          is_admin: 0,
+        },
+        {
+          id: 4,
+          userName: "Raul",
+          age: 18,
+          is_admin: 0,
+        },
+        {
+          id: 5,
+          userName: "Mateus",
+          age: 20,
+          is_admin: 1,
+        },
+      ],
+    };
   },
-  {
-    id: 2,
-    userName: "Rogridão",
-    age: 17
-  },
-  {
-    id: 3,
-    userName: "Marco",
-    age: 16
-  },
-  {
-    id: 4,
-    userName: "Raul",
-    age: 18
-  },
-  {
-    id: 5,
-    userName: "Mateus",
-    age: 20
-  }
-])
-
-onMounted(()=>{
-  console.log("mounted")
-})
-
-onUpdated(() =>{
-  console.log("updated")
-})
-
-onUnmounted(()=>{
-  console.log("unmounted")
-})
+};
 </script>
 
 <style>
