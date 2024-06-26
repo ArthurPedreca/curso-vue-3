@@ -1,57 +1,19 @@
-<template>
-  <h2>App</h2>
-
-  {{ count }}
-  {{ userName }}
-  <ul>
-    <li v-for="user in users">{{user.userName}} - Tamanho do penis: {{user.penis}}cm - Idade: {{user.age}} Anos</li>
-  </ul>
-
-  <button v-on:click="count++">Add</button>
-
-
-  <router-link to="/">Home</router-link>
-  <router-link to="/about">About</router-link>
-
-  <router-view></router-view>
-</template>
+<template></template>
 
 <script setup>
-import { onMounted, onUnmounted, onUpdated, reactive, ref } from 'vue';
+import { onMounted, reactive, } from 'vue';
 
-const count = ref(0)
-const userName = ref('Arthur')
+const users = reactive([])
 
-const users = reactive([
-  {
-    userName: "Arthur",
-    penis: 39,
-    age: 25
-  },
-  {
-    userName: "Rogridão",
-    penis: 29,
-    age: 14
-  },
-  {
-    userName: "Alex",
-    penis: 79,
-    age: 84
+import http from '@/services/http'
+
+onMounted(async()=>{
+  try{
+    const {data} = await http.get('api/users')
+    console.log(data)
+  }catch(error){
+    console.log(error)
   }
-])
-
-let myname = ref("Penis")
-
-onMounted(()=>{
-  console.log("mounted")
-})
-
-onUpdated(() =>{
-  console.log("updated")
-})
-
-onUnmounted(()=>{
-  console.log("unmounted")
 })
 </script>
 
