@@ -1,24 +1,25 @@
-<template></template>
+<template>
+
+  <h2>Lista de users</h2>
+
+  <ul>
+    <li v-for="user in users" :key="user.id">{{user.lastname}}</li>
+  </ul>
+</template>
 
 <script>
-import axios from 'axios';
+import dados from "./dados.json";
 export default {
-  data(){
-    return{
-      users:[]
-    }
+  data() {
+    return {
+      users: [],
+    };
   },
 
-  async mounted(){
-    try{
-      const {data} = await axios.get('http://localhost:8000/api/users');
-      console.log(data)
-    }catch(error){
-      console.error(error)
-    }
-  },
-
-}
+ mounted(){
+  this.users = dados
+ }
+};
 </script>
 
 <style>
