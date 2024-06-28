@@ -1,4 +1,8 @@
 <template>
+
+  <img :src="imagemSrc" alt="" class="my-class" :class="{'my-other-class':is_admin}">
+
+
   <hr />
 
   <h2>Lista de users</h2>
@@ -21,6 +25,8 @@ export default {
     return {
       users: [],
       showHeader: true,
+      is_admin:false,
+      imagemSrc:"https://picsum.photos/200",
     };
   },
 
@@ -30,8 +36,12 @@ export default {
 };
 </script>
 
-<style>
-#myapp {
-  background-color: aqua;
+<style scoped>
+.my-class{
+  border: solid 3px red;
+}
+
+.my-other-class{
+  border: solid 3px blue;
 }
 </style>
