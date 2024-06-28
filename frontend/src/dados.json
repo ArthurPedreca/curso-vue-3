@@ -1,0 +1,352 @@
+[
+    {
+        "id": 1,
+        "firstname": "Gabi Azevedo Barros Sobrinho",
+        "lastname": "Ramires",
+        "is_admin": 0,
+        "email": "estela.gomes@example.org"
+    },
+    {
+        "id": 2,
+        "firstname": "Srta. Cláudia Cortês",
+        "lastname": "Quintana",
+        "is_admin": 0,
+        "email": "michelle20@example.net"
+    },
+    {
+        "id": 3,
+        "firstname": "Renata Aníta Delatorre",
+        "lastname": "Ferraz",
+        "is_admin": 0,
+        "email": "uchoa.julio@example.com"
+    },
+    {
+        "id": 4,
+        "firstname": "Sebastião de Oliveira da Silva Sobrinho",
+        "lastname": "Souza",
+        "is_admin": 0,
+        "email": "gian07@example.com"
+    },
+    {
+        "id": 5,
+        "firstname": "Matias Godói Barros",
+        "lastname": "Aranda",
+        "is_admin": 0,
+        "email": "alana36@example.org"
+    },
+    {
+        "id": 6,
+        "firstname": "Dr. Teobaldo Vila Sepúlveda",
+        "lastname": "Bezerra",
+        "is_admin": 0,
+        "email": "molina.kelly@example.org"
+    },
+    {
+        "id": 7,
+        "firstname": "Emília Mariah Pereira Jr.",
+        "lastname": "Rosa",
+        "is_admin": 0,
+        "email": "vasques.luciana@example.org"
+    },
+    {
+        "id": 8,
+        "firstname": "Sr. Isaac Santiago Lovato",
+        "lastname": "Bonilha",
+        "is_admin": 0,
+        "email": "ysales@example.net"
+    },
+    {
+        "id": 9,
+        "firstname": "Sr. Augusto Erik Rivera",
+        "lastname": "Delvalle",
+        "is_admin": 0,
+        "email": "beltrao.joaquim@example.org"
+    },
+    {
+        "id": 10,
+        "firstname": "Sr. Erik André Beltrão",
+        "lastname": "Quintana",
+        "is_admin": 1,
+        "email": "chaves.horacio@example.org"
+    },
+    {
+        "id": 11,
+        "firstname": "Sr. Afonso Daví de Arruda Jr.",
+        "lastname": "Salazar",
+        "is_admin": 0,
+        "email": "pdominato@example.org"
+    },
+    {
+        "id": 12,
+        "firstname": "Laura Ana Bezerra",
+        "lastname": "Ferreira",
+        "is_admin": 0,
+        "email": "laura.ana@example.com"
+    },
+    {
+        "id": 13,
+        "firstname": "Carlos Eduardo Rocha",
+        "lastname": "Alves",
+        "is_admin": 0,
+        "email": "carlos.eduardo@example.org"
+    },
+    {
+        "id": 14,
+        "firstname": "Marta Silva Quintana",
+        "lastname": "Gomes",
+        "is_admin": 0,
+        "email": "marta.quintana@example.net"
+    },
+    {
+        "id": 15,
+        "firstname": "Felipe Almeida Sobrinho",
+        "lastname": "Silva",
+        "is_admin": 0,
+        "email": "felipe.sobrinho@example.com"
+    },
+    {
+        "id": 16,
+        "firstname": "Ana Júlia de Souza",
+        "lastname": "Santos",
+        "is_admin": 0,
+        "email": "ana.julia@example.com"
+    },
+    {
+        "id": 17,
+        "firstname": "Marcelo Henrique Pires",
+        "lastname": "Martins",
+        "is_admin": 0,
+        "email": "marcelo.pires@example.com"
+    },
+    {
+        "id": 18,
+        "firstname": "Gabriel Batista",
+        "lastname": "Barros",
+        "is_admin": 0,
+        "email": "gabriel.batista@example.org"
+    },
+    {
+        "id": 19,
+        "firstname": "Mariana Castro Pereira",
+        "lastname": "Oliveira",
+        "is_admin": 0,
+        "email": "mariana.castro@example.com"
+    },
+    {
+        "id": 20,
+        "firstname": "Juliana Almeida",
+        "lastname": "Cardoso",
+        "is_admin": 1,
+        "email": "juliana.almeida@example.com"
+    },
+    {
+        "id": 21,
+        "firstname": "Sra. Lívia da Silva",
+        "lastname": "Mendes",
+        "is_admin": 0,
+        "email": "livia.silva@example.org"
+    },
+    {
+        "id": 22,
+        "firstname": "Fernando Garcia",
+        "lastname": "Silva",
+        "is_admin": 0,
+        "email": "fernando.garcia@example.com"
+    },
+    {
+        "id": 23,
+        "firstname": "Pedro Mendes",
+        "lastname": "Costa",
+        "is_admin": 0,
+        "email": "pedro.mendes@example.com"
+    },
+    {
+        "id": 24,
+        "firstname": "Alice Dias",
+        "lastname": "Dias",
+        "is_admin": 0,
+        "email": "alice.dias@example.org"
+    },
+    {
+        "id": 25,
+        "firstname": "Daniela Alves",
+        "lastname": "Ribeiro",
+        "is_admin": 0,
+        "email": "daniela.alves@example.com"
+    },
+    {
+        "id": 26,
+        "firstname": "Júlio César Costa",
+        "lastname": "Pereira",
+        "is_admin": 0,
+        "email": "julio.cesar@example.com"
+    },
+    {
+        "id": 27,
+        "firstname": "Lucas Martins",
+        "lastname": "Souza",
+        "is_admin": 0,
+        "email": "lucas.martins@example.com"
+    },
+    {
+        "id": 28,
+        "firstname": "Beatriz Oliveira",
+        "lastname": "Barbosa",
+        "is_admin": 0,
+        "email": "beatriz.oliveira@example.com"
+    },
+    {
+        "id": 29,
+        "firstname": "Sofia Lima",
+        "lastname": "Ferreira",
+        "is_admin": 0,
+        "email": "sofia.lima@example.com"
+    },
+    {
+        "id": 30,
+        "firstname": "André Gomes",
+        "lastname": "Almeida",
+        "is_admin": 1,
+        "email": "andre.gomes@example.com"
+    },
+    {
+        "id": 31,
+        "firstname": "Fábio Santos",
+        "lastname": "Pinto",
+        "is_admin": 0,
+        "email": "fabio.santos@example.com"
+    },
+    {
+        "id": 32,
+        "firstname": "Luiza Ferreira",
+        "lastname": "Gomes",
+        "is_admin": 0,
+        "email": "luiza.ferreira@example.com"
+    },
+    {
+        "id": 33,
+        "firstname": "Rafael Costa",
+        "lastname": "Lima",
+        "is_admin": 0,
+        "email": "rafael.costa@example.com"
+    },
+    {
+        "id": 34,
+        "firstname": "Larissa Fernandes",
+        "lastname": "Santos",
+        "is_admin": 0,
+        "email": "larissa.fernandes@example.com"
+    },
+    {
+        "id": 35,
+        "firstname": "Gustavo Almeida",
+        "lastname": "Oliveira",
+        "is_admin": 0,
+        "email": "gustavo.almeida@example.com"
+    },
+    {
+        "id": 36,
+        "firstname": "Helena Carvalho",
+        "lastname": "Castro",
+        "is_admin": 0,
+        "email": "helena.carvalho@example.com"
+    },
+    {
+        "id": 37,
+        "firstname": "Luana Ribeiro",
+        "lastname": "Carvalho",
+        "is_admin": 0,
+        "email": "luana.ribeiro@example.com"
+    },
+    {
+        "id": 38,
+        "firstname": "Matheus Lopes",
+        "lastname": "Nunes",
+        "is_admin": 0,
+        "email": "matheus.lopes@example.com"
+    },
+    {
+        "id": 39,
+        "firstname": "Fernanda Oliveira",
+        "lastname": "Dias",
+        "is_admin": 0,
+        "email": "fernanda.oliveira@example.com"
+    },
+    {
+        "id": 40,
+        "firstname": "Henrique Sousa",
+        "lastname": "Souza",
+        "is_admin": 1,
+        "email": "henrique.sousa@example.com"
+    },
+    {
+        "id": 41,
+        "firstname": "Giovanna Dias",
+        "lastname": "Pinto",
+        "is_admin": 0,
+        "email": "giovanna.dias@example.com"
+    },
+    {
+        "id": 42,
+        "firstname": "Eduardo Cunha",
+        "lastname": "Vieira",
+        "is_admin": 0,
+        "email": "eduardo.cunha@example.com"
+    },
+    {
+        "id": 43,
+        "firstname": "Joana Vieira",
+        "lastname": "Cunha",
+        "is_admin": 0,
+        "email": "joana.vieira@example.com"
+    },
+    {
+        "id": 44,
+        "firstname": "Renan Barbosa",
+        "lastname": "Machado",
+        "is_admin": 0,
+        "email": "renan.barbosa@example.com"
+    },
+    {
+        "id": 45,
+        "firstname": "Bruna Machado",
+        "lastname": "Santos",
+        "is_admin": 0,
+        "email": "bruna.machado@example.com"
+    },
+    {
+        "id": 46,
+        "firstname": "Vinícius Pinto",
+        "lastname": "Mendes",
+        "is_admin": 0,
+        "email": "vinicius.pinto@example.com"
+    },
+    {
+        "id": 47,
+        "firstname": "Cecília Araújo",
+        "lastname": "Nascimento",
+        "is_admin": 0,
+        "email": "cecilia.araujo@example.com"
+    },
+    {
+        "id": 48,
+        "firstname": "Tiago Lima",
+        "lastname": "Ramos",
+        "is_admin": 0,
+        "email": "tiago.lima@example.com"
+    },
+    {
+        "id": 49,
+        "firstname": "Patrícia Nunes",
+        "lastname": "Teixeira",
+        "is_admin": 0,
+        "email": "patricia.nunes@example.com"
+    },
+    {
+        "id": 50,
+        "firstname": "Yasmin Silva",
+        "lastname": "Gonçalves",
+        "is_admin": 1,
+        "email": "yasmin.silva@example.com"
+    }
+]

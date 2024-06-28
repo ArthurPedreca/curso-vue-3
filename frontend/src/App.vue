@@ -1,19 +1,19 @@
-<template></template>
+<template>
+  <h2>Lista de users</h2>
+  <ul>
+    <li v-for="user in users" :key="user.id">{{ user.lastname }}</li>
+  </ul>
+</template>
 
 <script setup>
-import { onMounted, reactive, } from 'vue';
+import { onMounted, reactive } from 'vue';
 
-const users = reactive([])
+let users = reactive([])
 
-import http from '@/services/http'
+import dados from './dados.json'
 
-onMounted(async()=>{
-  try{
-    const {data} = await http.get('api/users')
-    console.log(data)
-  }catch(error){
-    console.log(error)
-  }
+onMounted(()=>{
+  users.push(...dados)
 })
 </script>
 
