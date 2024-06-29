@@ -1,7 +1,13 @@
 <template>
 
   <img :src="imagemSrc" alt="" class="my-class" :class="{'my-other-class':is_admin}">
-  <button @click="add('teste ' + count)">Clique aqui {{count}}</button>
+  <button @click="count++">Clique aqui {{count}}</button>
+
+  <!-- <input type="number" placeholder="QUalquer coisa "@keyup="add"> -->
+  <!-- <input type="text" placeholder="QUalquer coisa "@keyup="myName"> -->
+   <input type="text" placeholder="Qualquer coisa" v-model="userName">
+
+  {{userName}}
 
   <hr />
 
@@ -26,6 +32,7 @@ export default {
       users: [],
       showHeader: true,
       count:0,
+      userName:'',
       is_admin:false,
       imagemSrc:"https://picsum.photos/200",
     };
@@ -40,9 +47,10 @@ export default {
   },
 
   methods:{
-    add(teste){
-      console.log(teste)
-      this.count++
+    myName(event){
+      this.userName = event.target.value
+      // this.count+=Number(event.target.value);
+      // console.log(event.target.value)
     }
   }
 };
