@@ -1,5 +1,6 @@
 <template>
   <h2>Lista de users</h2>
+  <br>
 
   <div>
     <button @dblclick="add('teste')">Clique aqui {{ count }}</button>
@@ -8,7 +9,12 @@
       alt=""
       :class="{ myClass: is_admin, myOtherClass: !is_admin }"
     />
+<br>
+    <input type="text" placeholder="Name" v-model="userName"> 
+    {{ userName }}
   </div>
+  <br>
+ 
 
   <ul>
     <li v-for="user in users" :key="user.id">{{ user.lastname }}</li>
@@ -22,11 +28,16 @@ let users = reactive([]);
 const imageSrc = ref("https://picsum.photos/200");
 const is_admin = ref(false);
 const count = ref(0);
+const userName = ref('')
 
 
 function add(teste){
   count.value++
   console.log(teste + count.value)
+}
+
+function changeName(event){
+  userName.value = event.target.value
 }
 
 import dados from "./dados.json";
