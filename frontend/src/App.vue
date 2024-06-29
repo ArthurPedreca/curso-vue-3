@@ -1,7 +1,7 @@
 <template>
 
   <img :src="imagemSrc" alt="" class="my-class" :class="{'my-other-class':is_admin}">
-
+  <button @click="add('teste ' + count)">Clique aqui {{count}}</button>
 
   <hr />
 
@@ -25,6 +25,7 @@ export default {
     return {
       users: [],
       showHeader: true,
+      count:0,
       is_admin:false,
       imagemSrc:"https://picsum.photos/200",
     };
@@ -33,6 +34,17 @@ export default {
   mounted() {
     this.users = dados;
   },
+
+  updated(){
+    console.log('updated')
+  },
+
+  methods:{
+    add(teste){
+      console.log(teste)
+      this.count++
+    }
+  }
 };
 </script>
 
